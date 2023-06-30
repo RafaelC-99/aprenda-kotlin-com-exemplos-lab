@@ -1,4 +1,3 @@
-
 // [Template no Kotlin Playground](https://pl.kotl.in/WcteahpyN)
 
 enum class Nivel { BASICO, INTERMEDIARIO, DIFICIL }
@@ -13,6 +12,10 @@ data class Formacao(val nome: String, var conteudos: List<ConteudoEducacional>) 
     
     fun matricular(usuario: Usuario) {
         inscritos.add(usuario)
+    }
+    
+    fun removerMatricula(usuario: Usuario) {
+        inscritos.remove(usuario)
     }
 }
 
@@ -33,9 +36,9 @@ fun main() {
     val conteudoD1 = ConteudoEducacional("Conteudo dificil 1")
     val conteudoD2 = ConteudoEducacional("Conteudo dificil 2")
     
-    conteudosBasicos = mutableListOf<ConteudoEducacional>(conteudoB1, conteudoB2, coteudoB3)
-    conteudosIntermediarios = mutableListOf<ConteudoEducacional>(conteudoI1, conteudoI2)
-    conteudosDificeis = mutableListOf<ConteudoEducacional>(conteudoD1, conteudoD2)
+    var conteudosBasicos = mutableListOf<ConteudoEducacional>(conteudoB1, conteudoB2, conteudoB3)
+    var conteudosIntermediarios = mutableListOf<ConteudoEducacional>(conteudoI1, conteudoI2)
+    var conteudosDificeis = mutableListOf<ConteudoEducacional>(conteudoD1, conteudoD2)
 
     
     var formacaoBasica = Formacao("basicio", conteudosBasicos)

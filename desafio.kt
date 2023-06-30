@@ -1,6 +1,6 @@
 import java.util.Scanner
 
-un main(args: Array<String>) {
+fun main(args: Array<String>) {
 
     // Creates an instance which takes input from standard input (keyboard)
     val reader = Scanner(System.`in`)

@@ -35,7 +35,7 @@ fun imprimirDadosDeUsuarios(formacao: Formacao){
     println("Alunos:")
     println("--------------------")
     for(usuario in formacao.inscritos){
-        println("Nome: ${usuario.nome}, idade: ${usuario.idade}")
+        println("Nome: ${usuario.nome}, idade: ${usuario.idade}, email: ${usuario.email}")
     }
 }
 
@@ -91,7 +91,7 @@ fun main() {
     
     imprimirInformacoesGeraisDeFormacao(formacaoBasica)
    
-   	formacaoIntermediaria.matricular(usuario1)
+    formacaoIntermediaria.matricular(usuario1)
     formacaoIntermediaria.matricular(usuario5)
     formacaoIntermediaria.matricular(usuario4)
     
